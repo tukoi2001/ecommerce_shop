@@ -1,18 +1,47 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <slider/>
+    <banner/>
+    <featured/>
+    <testimonials/>
+    <scroll-top-arrow/>
+    <recommend-product/>
+    <brand/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import ScrollTopArrow from '../components/common/ScrollTopArrow.vue'
+import Banner from '../components/home/Banner.vue'
+import Brand from '../components/home/Brand.vue'
+import Featured from '../components/home/Featured.vue'
+import RecommendProduct from '../components/home/RecommendProduct.vue'
+import Slider from '../components/home/Slider.vue'
+import Testimonials from '../components/home/Testimonials.vue'
+
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    Slider,
+    Banner,
+    Featured,
+    Testimonials,
+    ScrollTopArrow,
+    RecommendProduct,
+    Brand,
+  },
+  // created() {
+  //   const customFieldProduct = {
+  //           images: ['bup-be-luna-va-ghe-an-1', 'bup-be-luna-va-ghe-an-2', 'bup-be-luna-va-ghe-an-3'],
+  //           saleOff: 5,
+  //           brand: 'Nhật Bản',
+  //           merital: 'Nhựa cao cấp',
+  //           age: '3 tuổi trở lên'
+  //       }
+  //       console.log(customFieldProduct)
+  //       const dataStringfy = JSON.stringify(customFieldProduct)
+  //       console.log(dataStringfy)
+  // }
 }
 </script>

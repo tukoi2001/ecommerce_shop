@@ -1,0 +1,261 @@
+.item {
+    position: relative;
+    overflow: hidden;
+}
+.item__link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.item__link img {
+    z-index: 1;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    vertical-align: middle;
+    height: 240px;
+}
+.item__badges {
+    position: absolute;
+    z-index: 8;
+    top: 20px;
+    left: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.badges__sale {
+    background-color: #00c4cc;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+    display: block;
+    padding: 4px 12px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.item__actions {
+    position: absolute;
+    z-index: 9;
+    top: 15px;
+    right: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.action {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    text-decoration: none;
+    color: #222222;
+    border-radius: 5px;
+    background-color: #ffffff;
+    visibility: hidden;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+    position: relative;
+    margin: 5px;
+}
+.action::before {
+    position: absolute;
+    right: 90%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #222222;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 8px;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.action::after {
+    content: '';
+    position: absolute;
+    right: 90%;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #222222;
+    margin-right: 3px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.wishlist::before {
+    content: 'Wishlist';
+}
+.compare::before {
+    content: 'Compare';
+}
+.quickview::before {
+    content: 'Quickview';
+}
+
+.item:hover .action {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.item:hover .item__cart {
+    opacity: 1;
+    visibility: visible;
+    bottom: 15px;
+}
+
+.action:hover.action::after,
+.action:hover.action::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20px 15px 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    text-align: center;
+    background-color: #ffffff;
+}
+.content__title {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #222222;
+}
+.content__title a {
+    text-decoration: none;
+    color: #222222;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.content__price {
+    font-size: 16px;
+    line-height: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    color: #222222;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ebebeb;
+}
+.content__new {
+    color: #00c4cc;
+}
+.content__old {
+    font-size: 16px;
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #DC3545;
+    opacity: .5;
+}
+.item__cart {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+.item__cart--btn {
+    webkit-box-shadow: 0 2px 1px 0.5px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 1px 0.5px rgb(0 0 0 / 10%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 12px 25px;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.content__title a:hover {
+    color: #00c4cc;
+}
+.action:hover,
+.item__cart--btn:hover {
+    color: #FFF;
+    background-color:#00c4cc;
+}

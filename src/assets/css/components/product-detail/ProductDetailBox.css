@@ -1,0 +1,31 @@
+.btn__link {
+    border: 1px solid #ccc;
+    margin: 20px 5px;
+    color: #555555;
+    background-color: #FFF;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.4 ease-in-out;
+}
+.btn__link:hover {
+    background-color: #00c4cc;
+    color: #FFF;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.active {
+    background-color: #00c4cc;
+}
+.btn:focus {
+    outline: none;
+    border: none;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }

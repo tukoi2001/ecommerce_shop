@@ -1,0 +1,105 @@
+.widget-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.search-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.search-box .form-control {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    display: block;
+    border-radius: 0;
+    height: 50px;
+    font-size: 14px;
+    width: calc(100% - 50px);
+}
+.search-box .btn {
+    border-radius: 0;
+    color: #ffffff;
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0px;
+    font-size: 20px;
+    background-color: #00c4cc;
+    border-color: #00c4cc;
+    transition: all 0.3s ease-in-out;
+}
+.widget-icon {
+    font-size: 20px!important;
+}
+.search-box .form-control:focus {
+    border-color: #00c4cc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn:focus {
+    box-shadow: none !important;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.sidebar-list > li > a {
+    position: relative;
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #222222;
+    transition: all 0.3s ease-in-out;
+}
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 30px 0 60px;
+}
+.tags li a {
+    border: 1px solid #ccc;
+    padding: 6px 15px 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #222222;
+    text-decoration: none;
+    margin-right: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.sidebar-list > li > a:hover {
+    color: #00c4cc;
+}
+.tags li a:hover {
+    color: #FFF;
+    background: #ff99cc;
+    border-color: #ff99cc;
+}
+.search-box .btn:hover {
+    background: #ff99cc;
+    border-color: #ff99cc;    
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    margin: 80px 0;
+}
+.contact-title .title {
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact-form-wrapper .input-area .input-item, .contact-form-wrapper .input-area .textarea-item {
+    padding: 10px 15px;
+    background: #f8f8f8;
+    border: 1px solid transparent;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    width: 100%;
+}
+.btn-secondary {
+    border-color: #ff99cc;
+    background-color: #ff99cc;
+    color: #ffffff;
+}
+.btn {
+    font-size: 15px;
+    padding: 14px 30px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    line-height: 1;
+}

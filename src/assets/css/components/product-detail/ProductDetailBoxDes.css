@@ -1,0 +1,17 @@
+.product__brand p,
+.product__material p,
+.product__age p,
+.product__des p {
+    line-height: 1.7;
+    color: #555555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0px;
+    margin: 10px 0;
+}
+.product__brand span,
+.product__material span,
+.product__age span {
+    color: #000;
+    font-weight: 700;
+}

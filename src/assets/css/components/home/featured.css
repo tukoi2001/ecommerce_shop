@@ -1,0 +1,12 @@
+.featured__title {
+    font-size: 30px;
+    color: #222222;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.featured__des {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+}
+

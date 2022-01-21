@@ -1,0 +1,17 @@
+.header__me {
+    background-color: #00c4cc;
+    padding: 30px 20px;
+}
+.me__home {
+    color: #000;
+    font-size: 1.4rem;
+    padding: 8px;
+}
+.me__title {
+    padding: 0 8px;
+}
+.product {
+    margin: 80px 0;
+}
+
+

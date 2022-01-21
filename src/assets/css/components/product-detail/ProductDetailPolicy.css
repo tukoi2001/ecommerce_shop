@@ -1,0 +1,13 @@
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #222222;
+}
+.shipping-policy p {
+    line-height: 1.9;
+    font-size: 1rem;
+}
+.policy-list {
+    padding-left: 0;
+}

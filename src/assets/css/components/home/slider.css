@@ -1,0 +1,59 @@
+.main__slider .slider__arrow--prev,
+.main__slider .slider__arrow--next {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    padding: 20px;
+    top: 45%;
+    transform: translateX(-50%);
+}
+.main__slider .slider__arrow--prev {
+    left: 20px;
+}
+.main__slider .arrow {
+    width: 35px;
+    height: 35px;
+}
+.main__slider .slider__arrow--next {
+    right: -50px;
+}
+.main__slider .slider__arrow {
+    display: none;
+    transition: all 0.5s ease;
+}
+.main__slider .img__slider:hover .slider__arrow {
+    display: block;
+}
+.main__slider .carousel-caption {
+    left: 0%;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.main__slider .slider__title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #000;
+}
+.main__slider .slider__des {
+    display: block;
+    line-height: 1.3;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.main__slider .slider__btn {
+    font-size: 15px;
+    padding: 14px 30px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    line-height: 1;
+    text-decoration: none;
+    background-color: #00c4cc;
+    color: #ffffff;
+}

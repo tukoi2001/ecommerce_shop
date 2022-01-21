@@ -1,0 +1,22 @@
+.product {
+    background-color: #00c4cc;
+    padding: 30px 20px;
+    margin-bottom: 70px;
+}
+.product__home {
+    color: #000;
+    font-size: 1.4rem;
+    padding: 8px;
+}
+.product__title {
+    padding: 0 8px;
+}
+.active {
+    color: #00c4cc;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }

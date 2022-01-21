@@ -1,0 +1,168 @@
+.wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+.content__register {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px;
+}
+.content__register-img img {
+    width: 100%;
+    display: block;
+    margin: 75px auto 0;
+}
+.content__register-form {
+    padding: 50px 100px;
+}
+.form__title {
+    font-size: 24px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 54px;
+    font-weight: 600;
+}
+.form__email,
+.form__password {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.form__email-input,
+.form__password-input {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+    border: 2px solid transparent;
+    outline: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.form__email-symbol,
+.form__password-symbol {
+    font-size: 15px;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.form__btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.form__check {
+    padding: 10px 0;
+}
+.form__label {
+    margin-left: 10px;
+}
+.form__btn-submit {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: #00c4cc;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border: none;
+    outline: none;
+}
+.form__register {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+.form__btn-submit:hover {
+    background-color: #222;
+}
+.form__forget-link:hover,
+.form__register:hover {
+    color: #00c4cc;
+}
+
+.form__email-input:focus,
+.form__password-input:focus {
+    border-color: #00c4cc;
+}
+.form__email-input:focus~.form__email-symbol,
+.form__password-input:focus~.form__password-symbol {
+    color: #00c4cc;
+    padding-left: 28px;
+}
+.danger {
+    color: red;
+    font-size: 13px;
+}
+.register {
+    font-weight: bold;
+    font-size: 1rem;
+}

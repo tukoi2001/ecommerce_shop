@@ -1,0 +1,12 @@
+.blog {
+    background-color: #00c4cc;
+    padding: 30px 20px;
+}
+.blog__home {
+    color: #000;
+    font-size: 1.4rem;
+    padding: 8px;
+}
+.blog__title {
+    padding: 0 8px;
+}

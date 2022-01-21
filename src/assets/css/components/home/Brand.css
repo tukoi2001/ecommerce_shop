@@ -1,0 +1,15 @@
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+.wrapper {
+    margin: 70px 0;
+}
+.brand {
+    padding: 30px 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}

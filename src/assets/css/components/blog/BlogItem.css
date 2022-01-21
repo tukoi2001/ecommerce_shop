@@ -1,0 +1,55 @@
+.single-blog .blog-thumb a img {
+    width: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-blog .blog-content .blog-meta {
+    margin: 30px 0 20px;
+}
+.single-blog .blog-content .blog-meta p {
+    font-size: 14px;
+    line-height: 1;
+    color: #555555;
+    text-transform: uppercase;
+}
+.single-blog .blog-content .blog-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.single-blog .blog-content .blog-title a {
+    color: #222222;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.link {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 18px;
+    line-height: 1.7;
+    color: #555555;
+    position: relative;
+    visibility: visible;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-blog .blog-thumb a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.single-blog .blog-thumb a:hover img {
+    transform: scale(1.1);
+}
+.single-blog .blog-content .blog-title a:hover {
+    color: #00c4cc;
+}
+.link:hover {
+    color: #00c4cc;
+}
